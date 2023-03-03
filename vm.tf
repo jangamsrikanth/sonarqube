@@ -1,5 +1,5 @@
 resource "azurerm_virtual_machine" "Sonar004" {
-  name                  = "Sonar004"
+  name                  = "Sonarsrk"
   location              = azurerm_resource_group.testrg4.location
   resource_group_name   = azurerm_resource_group.testrg4.name
   network_interface_ids = [azurerm_network_interface.nictest4.id]
@@ -18,7 +18,7 @@ resource "azurerm_virtual_machine" "Sonar004" {
     version   = "latest"
   }
   storage_os_disk {
-    name              = "myosdisk1"
+    name              = "myosdisk02"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
